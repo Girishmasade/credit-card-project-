@@ -4,7 +4,7 @@ import { assets, cardData } from "../assets/assets.js";
 
 const HeroSection = () => {
   return (
-    <div className="border-black border-b-6">
+    <div className="border-black border-b-8">
       <div className="container mx-auto mt-10 px-6 lg:py-28 py-10">
         <div className="grid lg:grid-cols-2 gap-12 ">
           <div className="flex flex-col items-start gap-3">
