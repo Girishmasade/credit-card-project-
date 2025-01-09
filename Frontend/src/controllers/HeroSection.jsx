@@ -1,8 +1,16 @@
-import React from "react";
-import { assets, cardData } from "../assets/assets.js";
-
-
+import React, { useContext, useEffect, useState } from "react";
+import { assets } from "../assets/assets.js";
+import { ShopContext } from "../context/ShopContext.jsx";
 const HeroSection = () => {
+
+  const [cartDataItem, setcartDataItem] = useState([])
+  const {cardData} = useContext(ShopContext)
+
+  useEffect(() => {
+   setcartDataItem(cardData.slice(0, 5))
+  }, [cardData])
+  
+
   return (
     <div className="border-black border-b-8">
       <div className="container mx-auto mt-10 px-6 lg:py-28 py-10">
@@ -21,10 +29,10 @@ const HeroSection = () => {
             <img src={assets.hero} alt="" />
           </div>
         </div>
-        <div className="flex flex-wrap gap-7 justify-center pt-11 ">
+        <div className="flex flex-wrap gap-7 justify-center pt-11  ">
            {
-            cardData.map((item, index) => (
-                <div className="border-2 border-black border-b-8 flex flex-col items-center bg-white border-brutal-sm p-2" key={index}>
+            cartDataItem.map((item, index) => (
+                <div className="border-2 border-black border-b-8 rounded-md flex flex-col items-center bg-white border-brutal-sm p-2" key={index}>
                     <img src={item.img} alt="" width={50} className="h-6 lg:h-8 min-w-20 object-contain"/>
                     <p>{item.title}</p>
                 </div>

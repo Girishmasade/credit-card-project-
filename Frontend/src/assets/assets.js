@@ -5,6 +5,12 @@ import fuel from "./fuel.png";
 import movie from "./movie.png";
 import travel from "./travel.png";
 import dining from "./dining.png";
+import lifetime from "./lifetime.png";
+import lounge from "./lounge.png";
+import rupay from "./rupay.png";
+import secured from "./secured.png";
+import shopping from "./shopping.jpg";
+import cashback from "./cashback.png";
 
 import gridbg from "./gridbg.png";
 
@@ -44,29 +50,59 @@ export const cardData = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: "Fuel",
     img: [fuel],
   },
   {
-    id: 1,
+    id: 3,
     title: "Forex",
     img: [forex],
   },
   {
-    id: 1,
+    id: 4,
     title: "Movie",
     img: [movie],
   },
   {
-    id: 1,
+    id: 5,
     title: "Air Miles",
     img: [airmiles],
   },
   {
-    id: 1,
+    id: 6,
     title: "Dining",
     img: [dining],
+  },
+  {
+    id: 7,
+    title: "Cashback",
+    img: [cashback],
+  },
+  {
+    id: 8,
+    title: "Lifetime Free",
+    img: [lifetime],
+  },
+  {
+    id: 9,
+    title: "Lounge Access",
+    img: [lounge],
+  },
+  {
+    id: 10,
+    title: "Shopping",
+    img: [shopping],
+  },
+  {
+    id: 11,
+    title: "Secured Credit Cards",
+    img: [secured],
+  },
+  {
+    id: 12,
+    title: "Rupay",
+    img: [rupay],
   },
 ];
 
@@ -75,88 +111,75 @@ export const issueSubMenu = [
     id: 1,
     title: "HSBC",
     img: [hsbc],
-    a: "www.google.com",
   },
   {
     id: 2,
     title: "IndusInd",
     img: [indusind],
-    a: "www.google.com",
   },
   {
     id: 3,
     title: "Axis",
     img: [axis],
-    a: "www.google.com",
   },
   {
     id: 4,
     title: "American Express",
     img: [amex],
-    a: "www.google.com",
   },
   {
     id: 5,
     title: "IDFC First Bank",
     img: [idfc],
-    a: "www.facebook.com",
   },
   {
     id: 6,
     title: "ICICI Bank",
     img: [icici],
-    a: "www.facebook.com",
   },
   {
     id: 8,
     title: "SBI Card",
     img: [sbicard],
-    a: "www.facebook.com",
   },
   {
     id: 9,
     title: "Federal Bank",
     img: [federal],
-    a: "www.facebook.com",
   },
   {
     id: 10,
     title: "Fintech Card",
     img: [fintech],
-    a: "www.facebook.com",
   },
   {
     id: 11,
     title: "BOB Card",
     img: [bobcard],
-    a: "www.facebook.com",
   },
   {
     id: 12,
     title: "Kotak Mahindra",
     img: [kotak],
-    a: "www.facebook.com",
   },
   {
     id: 13,
     title: "AU Bank",
     img: [au],
-    a: "www.facebook.com",
   },
   {
     id: 14,
     title: "Yes Bank",
     img: [yes],
-    a: "www.facebook.com",
   },
-  // {
-  //     id: 15,
-  //     title: 'HSBC',
-  //     img: ''
-  // },
-  //    {
-  //     id: 16,
-  //     title: 'HSBC',
-  //     img: ''
-  // },
+  {
+      id: 15,
+      title: 'HDFC',
+      img: [hdfc],
+  },
+     {
+      id: 16,
+      title: 'Standard Charated',
+      img: [standard],
+  },
 ];
