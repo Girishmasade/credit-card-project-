@@ -7,7 +7,7 @@ const HeroSection = () => {
   const {cardData} = useContext(ShopContext)
 
   useEffect(() => {
-   setcartDataItem(cardData.slice(0, 5))
+   setcartDataItem(cardData.slice(0, 6))
   }, [cardData])
   
 

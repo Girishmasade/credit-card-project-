@@ -18,7 +18,8 @@ const Issuers = () => {
   
 
   return (
-    <div className='container mx-auto md:pt-10 min-h-screen p-5 md:p-1'>
+      <div className="border-black border-b-8 pb-10">
+    <div className='container mx-auto md:pt-10 pt-10 min-h-screen p-5 md:p-1'>
       <div className="md:text-4xl text-center border-2 border-black border-b-4 rounded-md p-2 shadow-sm shadow-black md:w-[600px] mx-auto font-medium">
       <h1 className="">Top credit card issuers</h1>
       </div>
@@ -30,6 +31,7 @@ const Issuers = () => {
                 ))
             }
         </div>
+    </div>
     </div>
   )
 }

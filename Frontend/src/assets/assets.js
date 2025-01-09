@@ -183,3 +183,10 @@ export const issueSubMenu = [
       img: [standard],
   },
 ];
+
+export const creditCardData = [
+  {
+    id: 1,
+    
+  }
+]
