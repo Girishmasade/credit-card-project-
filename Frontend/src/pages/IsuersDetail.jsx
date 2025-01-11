@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IsuersItem = () => {
+const IsuersDetail = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const IsuersItem = () => {
   )
 }
 
-export default IsuersItem
+export default IsuersDetail

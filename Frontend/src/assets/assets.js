@@ -30,6 +30,13 @@ import federal from "./federal.png";
 import fintech from "./j.png";
 import bobcard from "./bobcard.png";
 
+// Card
+import hdfmillcard from './card/hdfcmill.jpg'
+import idfcmillenia from './card/idfcmillenia.jpg'
+import idfcselectcard from './card/idfcselectcard.jpg'
+import idfcwealth from './card/idfcwealth.png'
+import rating from './rating.png'
+
 export const assets = {
   hero,
   airmiles,
@@ -108,77 +115,77 @@ export const cardData = [
 
 export const issueSubMenu = [
   {
-    id: 1,
+    _id: 1,
     title: "HSBC",
     img: [hsbc],
   },
   {
-    id: 2,
+    _id: 2,
     title: "IndusInd",
     img: [indusind],
   },
   {
-    id: 3,
+    _id: 3,
     title: "Axis",
     img: [axis],
   },
   {
-    id: 4,
+    _id: 4,
     title: "American Express",
     img: [amex],
   },
   {
-    id: 5,
+    _id: 5,
     title: "IDFC First Bank",
     img: [idfc],
   },
   {
-    id: 6,
+    _id: 6,
     title: "ICICI Bank",
     img: [icici],
   },
   {
-    id: 8,
+    _id: 8,
     title: "SBI Card",
     img: [sbicard],
   },
   {
-    id: 9,
+    _id: 9,
     title: "Federal Bank",
     img: [federal],
   },
   {
-    id: 10,
+    _id: 10,
     title: "Fintech Card",
     img: [fintech],
   },
   {
-    id: 11,
+    _id: 11,
     title: "BOB Card",
     img: [bobcard],
   },
   {
-    id: 12,
+    _id: 12,
     title: "Kotak Mahindra",
     img: [kotak],
   },
   {
-    id: 13,
+    _id: 13,
     title: "AU Bank",
     img: [au],
   },
   {
-    id: 14,
+    _id: 14,
     title: "Yes Bank",
     img: [yes],
   },
   {
-      id: 15,
+      _id: 15,
       title: 'HDFC',
       img: [hdfc],
   },
      {
-      id: 16,
+      _id: 16,
       title: 'Standard Charated',
       img: [standard],
   },
@@ -187,6 +194,46 @@ export const issueSubMenu = [
 export const creditCardData = [
   {
     id: 1,
-    
+    img: [hdfmillcard],
+    title: 'HDFC Bank Millennia Credit Card',
+    rating: [rating],
+        p1: "Joining Fee: ₹1,000 + GST",
+        p2: "Renewal Fee: ₹1,000 + GST",
+        p3: "Reward Type: Cashback",
+    category: 'hdfc',
+    subCategory: 'indian-oil'
+  },
+  {
+    id: 2,
+    img: [idfcmillenia],
+    title: 'HDFC Bank Millennia Credit Card 2',
+    rating: [rating],
+    p1: "Joining Fee: ₹1,000 + GST",
+    p2: "Renewal Fee: ₹1,000 + GST",
+    p3: "Reward Type: Cashback",
+    category: 'hdfc',
+    subCategory: 'indian-oil'
+  },
+  {
+    id: 3,
+    img: [idfcselectcard],
+    title: 'HDFC Bank Millennia Credit Card 2',
+    rating: [rating],
+    p1: "Joining Fee: ₹1,000 + GST",
+    p2: "Renewal Fee: ₹1,000 + GST",
+    p3: "Reward Type: Cashback",
+    category: 'hdfc',
+    subCategory: 'indian-oil'
+  },
+  {
+    id: 4,
+    img: [idfcwealth],
+    title: 'HDFC Bank Millennia Credit Card 2',
+    rating: [rating],
+    p1: "Joining Fee: ₹1,000 + GST",
+    p2: "Renewal Fee: ₹1,000 + GST",
+    p3: "Reward Type: Cashback",
+    category: 'hdfc',
+    subCategory: 'indian-oil'
   }
-]
+  ]

@@ -10,9 +10,6 @@ const CardItem = ({ id, img, title }) => {
             <img src={img} alt="" className="mx-auto w-20 pb-4" />
             <h1 className="text-center font-semibold text-xl">{title}</h1>
           </Link>
-
-
-
       </div>
     </div>
   );
