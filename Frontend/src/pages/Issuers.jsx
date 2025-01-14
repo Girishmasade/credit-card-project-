@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import CardItem from '../controllers/cardItem'
+import {CardItem} from '../controllers/cardItem'
 import { ShopContext } from '../context/ShopContext'
 
 const Issuers = () => {
@@ -10,7 +10,7 @@ const Issuers = () => {
   useEffect(() => {
 
     let issueSubMenucpy = issueSubMenu.slice()
-    console.log(issueSubMenucpy);
+    // console.log(issueSubMenucpy);
     
     setIssuersData(issueSubMenucpy)
    
@@ -27,7 +27,7 @@ const Issuers = () => {
         <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-4 gap-5 gap-y-6">
             {
                 IssuersData.map((item, index) => (
-                  <CardItem key={index} id={item.id} title={item.title} img={item.img} />
+                  <CardItem key={index} id={item._id} title={item.title} img={item.img} />
                 ))
             }
         </div>

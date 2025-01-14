@@ -1,9 +1,9 @@
 import React from 'react'
 import HeroSection from '../controllers/HeroSection'
 import Issuers from './Issuers'
-import CardItem from '../controllers/cardItem'
-import CreditCard from './CreditCard'
 import CreditCardHomePage from '../controllers/CreditCardHomePage'
+import Categories from './Categories'
+import WhyWeUse from '../controllers/CreditCardInfo'
 
 const Home = () => {
   return (
@@ -11,6 +11,8 @@ const Home = () => {
       <HeroSection/>
       <Issuers/>
       <CreditCardHomePage/>
+      <Categories/>
+      <WhyWeUse/>
     </div>
   )
 }

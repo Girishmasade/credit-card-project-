@@ -6,9 +6,11 @@ import NotFound from '../pages/NotFound'
 import IsuersDetail from '../pages/IsuersDetail'
 import Issuers from '../pages/Issuers'
 import Categories from '../pages/Categories'
-import CategoriesItem from '../controllers/CategoriesItem'
 import CreditCard from '../pages/CreditCard'
 import CreditCardDetails from '../pages/CreditCardDetails'
+import CategoriesData from '../pages/CategoriesData'
+import PrivacyPolicy from '../pages/PrivacyPolicy'
+import Blog from '../pages/Blog'
 
 const Router = () => {
   return (
@@ -19,9 +21,11 @@ const Router = () => {
       <Route path='/card' element={<CreditCard/>}/>
       <Route path='/card/:id' element={<CreditCardDetails/>}/>
       <Route path='/categories' element={<Categories/>}/>
-      <Route path='/categories/:id' element={<CategoriesItem/>}/>
+      <Route path='/categories/:id' element={<CategoriesData/>}/>
       <Route path='/issuers' element={<Issuers/>}/>
-      <Route path='/issuers/:id' element={<IsuersDetail/>}/>
+      <Route path='/issuers/:issuersId' element={<IsuersDetail/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
   )

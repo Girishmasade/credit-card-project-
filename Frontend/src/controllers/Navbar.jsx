@@ -4,7 +4,7 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
 import { ShopContext } from "../context/ShopContext";
 
-const Navbar = ({ id }) => {
+const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { issueSubMenu, cardData } = useContext(ShopContext);
 
@@ -21,19 +21,19 @@ const Navbar = ({ id }) => {
 
   return (
     <div className="w-full">
-      <nav className="bg-[#e9b308] relative shadow border-b-8 border-black h-[10vh] xl:h-[14vh]">
-        <div className="container mx-auto flex justify-between items-center px-4 md:px-8 relative md:py-7">
+      <nav className="bg-yellow-500 border-b-8 border-black z-40">
+        <div className="container mx-auto px-5 py-5 lg:py-10 flex items-center justify-between">
           <img
             src="https://images.pexels.com/photos/29988969/pexels-photo-29988969/free-photo-of-charming-street-view-in-kerala-india.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
             alt="Logo"
-            className="absolute top-5 left-4 transform translate-y-2/2 rounded-full border-4 border-black w-16 h-16 md:w-32 md:h-32"
+            className="h-20 w-20 lg:w-28 lg:h-28 -mb-16 lg:-mb-44 relative bottom-2 lg:bottom-4 border-4 border-black rounded-full"
           />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 ml-auto">
             <NavLink
               to="/"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border p-1 px-2 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               Home
             </NavLink>
@@ -44,7 +44,7 @@ const Navbar = ({ id }) => {
             >
             <NavLink
               to="/issuers"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               Issuers <MdArrowDropDown/>
             </NavLink>
@@ -54,7 +54,7 @@ const Navbar = ({ id }) => {
               {openIssuersData &&
                 issuersData.map((item, index) => (
                   <Link
-                    to={`/issuers/${item.id}`}
+                    to={`/issuers/${item._id}`}
                     key={index}
                     className="flex items-center gap-2 p-1 hover:bg-gray-100 rounded-md"
                   >
@@ -76,7 +76,7 @@ const Navbar = ({ id }) => {
                   
             <NavLink
               to="/categories"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
               >
               Categories <MdArrowDropDown />
               </NavLink>
@@ -101,14 +101,14 @@ const Navbar = ({ id }) => {
 
             <NavLink
               to="/blog"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               Blog
             </NavLink>
 
             <NavLink
               to="/about"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               About
             </NavLink>
@@ -132,7 +132,7 @@ const Navbar = ({ id }) => {
             <div className="flex flex-col items-start justify-start pl-4 gap-6 py-6">
               <NavLink
                 to="/"
-                className="text-sm border-b-8 border p-1 bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+                className="text-sm border-b-8 border px-2 p-1 bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
                 onClick={() => setIsVisible(false)}
               >
                 Home
@@ -144,7 +144,7 @@ const Navbar = ({ id }) => {
             >
             <NavLink
               to="/issuers"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               Issuers <MdArrowDropDown/>
             </NavLink>
@@ -176,7 +176,7 @@ const Navbar = ({ id }) => {
                   
             <NavLink
               to="/categories"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
               >
               Categories <MdArrowDropDown />
               </NavLink>
@@ -201,14 +201,14 @@ const Navbar = ({ id }) => {
 
             <NavLink
               to="/blog"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               Blog
             </NavLink>
 
             <NavLink
               to="/about"
-              className="text-sm border-b-8 border p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
+              className="text-sm border-b-8 border px-2 p-1 items-center flex text-center bg-white rounded-md border-black font-medium hover:cursor-pointer text-decoration-none"
             >
               About
             </NavLink>
