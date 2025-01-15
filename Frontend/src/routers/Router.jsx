@@ -11,6 +11,7 @@ import CreditCardDetails from '../pages/CreditCardDetails'
 import CategoriesData from '../pages/CategoriesData'
 import PrivacyPolicy from '../pages/PrivacyPolicy'
 import Blog from '../pages/Blog'
+import BlogInfo from '../pages/BlogInfo'
 
 const Router = () => {
   return (
@@ -25,6 +26,7 @@ const Router = () => {
       <Route path='/issuers' element={<Issuers/>}/>
       <Route path='/issuers/:issuersId' element={<IsuersDetail/>}/>
       <Route path='/blog' element={<Blog/>}/>
+      <Route path='/blog/:id' element={<BlogInfo/>}/>
       <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>

@@ -12,6 +12,21 @@ import secured from "./secured.png";
 import shopping from "./shopping.jpg";
 import cashback from "./cashback.png";
 
+// card categories img 2
+import travelCreditCard from './cardCategories/Besttravel.jpg'
+import fuelCreditCard from './cardCategories/FuelCreditCards.jpg'
+import forexCreditCard from './cardCategories/CreditCardsForex.jpg'
+import movieCreditCard from './cardCategories/Best Credit Cards For Movies.jpg'
+import airCreditCard from './cardCategories/Best Air Miles Credit Cards.jpg'
+import shoppingCreditCard from './cardCategories/Best Credit Cards For Shopping.jpg'
+import diningCreditCard from './cardCategories/Best Dining Credit Cards.jpg'
+import cashbackCreditCard from './cardCategories/Best Cashback Credit Cards.jpg'
+import lifetimeCreditCard from './cardCategories/Best Lifetime Free Credit Cards.jpg'
+import rupayCreditCard from './cardCategories/Best Rupay Credit Cards.jpg'
+import securedCreditCard from './cardCategories/secured Credit Card.jpg'
+import loungeaccessCreditCard from './cardCategories/Best Credit Cards For Lounge Access .jpg'
+
+
 import gridbg from "./gridbg.png";
 
 import axis from "./axis.svg";
@@ -37,6 +52,14 @@ import idfcselectcard from './card/idfcselectcard.jpg'
 import idfcwealth from './card/idfcwealth.png'
 import rating from './rating.png'
 
+// Blog
+import credit1 from './Blog/Credit1.jpg'
+import credit2 from './Blog/Credit2.jpg'
+import credit3 from './Blog/Credit3.jpg'
+import credit4 from './Blog/Credit4.jpg'
+import credit5 from './Blog/Credit5.jpg'
+
+
 export const assets = {
   hero,
   airmiles,
@@ -54,62 +77,74 @@ export const cardData = [
     id: 1,
     title: "Travel",
     img: [travel],
+    img2: [travelCreditCard]
   },
 
   {
     id: 2,
     title: "Fuel",
     img: [fuel],
+    img2: [fuelCreditCard]
   },
   {
     id: 3,
     title: "Forex",
     img: [forex],
+    img2: [forexCreditCard]
   },
   {
     id: 4,
     title: "Movie",
     img: [movie],
+    img2: [movieCreditCard]
   },
   {
     id: 5,
     title: "Air Miles",
     img: [airmiles],
+    img2: [airCreditCard]
   },
   {
     id: 6,
     title: "Dining",
     img: [dining],
+    img2: [diningCreditCard]
   },
   {
     id: 7,
     title: "Cashback",
     img: [cashback],
+    img2: [cashbackCreditCard]
   },
   {
     id: 8,
     title: "Lifetime Free",
     img: [lifetime],
+    img2: [lifetimeCreditCard]
   },
   {
     id: 9,
     title: "Lounge Access",
     img: [lounge],
+    img2: [loungeaccessCreditCard]
   },
   {
     id: 10,
     title: "Shopping",
     img: [shopping],
+    img2: [shoppingCreditCard]
   },
   {
     id: 11,
     title: "Secured Credit Cards",
     img: [secured],
+    img2: [securedCreditCard]
   },
   {
     id: 12,
     title: "Rupay",
     img: [rupay],
+    img2: [rupayCreditCard]
   },
 ];
 
@@ -236,4 +271,55 @@ export const creditCardData = [
     category: 'hdfc',
     subCategory: 'indian-oil'
   }
-  ]
+]
+
+export const blogData = [
+   {
+     id: 1,
+     img: credit1,
+     title: 'Credit Cards in India: A Comprehensive Guide to Choosing the Best Card for Your Needs',
+     Introduction : {
+      context : 'In India, credit cards are increasingly becoming a crucial financial tool. They provide convenience, rewards, and financial flexibility, making them popular for daily transactions, online shopping, and big purchases. However, with a wide variety of options available, choosing the right credit card can be overwhelming.',
+      purpose : 'This comprehensive guide will help you understand the different types of credit cards available in India, their benefits, and how to choose the best card based on your spending habits and financial needs.',
+    }
+  },
+  {
+    id: 2,
+    img: credit2,
+    title: 'Credit Cards in India: A Comprehensive Guide to Choosing the Best Card for Your Needs',
+    Introduction : {
+     context : 'In India, credit cards are increasingly becoming a crucial financial tool. They provide convenience, rewards, and financial flexibility, making them popular for daily transactions, online shopping, and big purchases. However, with a wide variety of options available, choosing the right credit card can be overwhelming.',
+     purpose : 'This comprehensive guide will help you understand the different types of credit cards available in India, their benefits, and how to choose the best card based on your spending habits and financial needs.',
+   }
+ },
+ {
+  id: 3,
+  img: credit3,
+  title: 'Credit Cards in India: A Comprehensive Guide to Choosing the Best Card for Your Needs',
+  Introduction : {
+   context : 'In India, credit cards are increasingly becoming a crucial financial tool. They provide convenience, rewards, and financial flexibility, making them popular for daily transactions, online shopping, and big purchases. However, with a wide variety of options available, choosing the right credit card can be overwhelming.',
+   purpose : 'This comprehensive guide will help you understand the different types of credit cards available in India, their benefits, and how to choose the best card based on your spending habits and financial needs.',
+ }
+},
+
+{
+  id: 4,
+  img: credit4,
+  title: 'Credit Cards in India: A Comprehensive Guide to Choosing the Best Card for Your Needs',
+  Introduction : {
+   context : 'In India, credit cards are increasingly becoming a crucial financial tool. They provide convenience, rewards, and financial flexibility, making them popular for daily transactions, online shopping, and big purchases. However, with a wide variety of options available, choosing the right credit card can be overwhelming.',
+   purpose : 'This comprehensive guide will help you understand the different types of credit cards available in India, their benefits, and how to choose the best card based on your spending habits and financial needs.',
+ }
+},
+
+{
+  id: 5,
+  img: credit5,
+  title: 'Credit Cards in India: A Comprehensive Guide to Choosing the Best Card for Your Needs',
+  Introduction : {
+   context : 'In India, credit cards are increasingly becoming a crucial financial tool. They provide convenience, rewards, and financial flexibility, making them popular for daily transactions, online shopping, and big purchases. However, with a wide variety of options available, choosing the right credit card can be overwhelming.',
+   purpose : 'This comprehensive guide will help you understand the different types of credit cards available in India, their benefits, and how to choose the best card based on your spending habits and financial needs.',
+ }
+},
+    
+]

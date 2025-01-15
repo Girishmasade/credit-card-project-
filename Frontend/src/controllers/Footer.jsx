@@ -5,10 +5,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <section>
-
-
-  
-    <div className="bg-yellow-500 border-y-6 border-black relative">
+    <div className="bg-yellow-500 border-y-6 border-black relative -z-10">
       <div className="container mx-auto px-5 py-10 grid lg:grid-cols-12">
         <div className="lg:col-span-8 flex flex-col justify-center">
           <div className="flex items-center gap-4 flex-wrap max-lg:pr-[90px]">

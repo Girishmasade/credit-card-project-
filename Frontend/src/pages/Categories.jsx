@@ -23,7 +23,7 @@ const Categories = () => {
          <div className="grid md:grid-cols-3 gap-12 sm:grid-rows-1 md:pt-20">
           {
             productData.map((item, index) => (
-              <CategoriesItem key={index} id={item.id} img={item.img} title={item.title}/>
+              <CategoriesItem key={index} id={item.id} img2={item.img2} title={item.title}/>
             ))
           }
         </div> 

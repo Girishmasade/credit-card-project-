@@ -1,12 +1,13 @@
 import { createContext } from "react";
-import { cardData, creditCardData, issueSubMenu } from "../assets/assets";
+import { blogData, cardData, creditCardData, issueSubMenu } from "../assets/assets";
 
 export const ShopContext = createContext();
 
 const value = {
     issueSubMenu,
     cardData,
-    creditCardData
+    creditCardData,
+    blogData
 };
 
 const ShopContextProvider = (props) => {
