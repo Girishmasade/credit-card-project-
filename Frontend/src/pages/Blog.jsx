@@ -16,9 +16,9 @@ const Blog = () => {
   }, [blogData]);
 
   return (
-    <div className="container p-20 ">
+    <div className="container md:p-20 p-5">
       <div className="md:text-4xl text-center border-2 border-black border-b-4 rounded-md p-2 shadow-sm shadow-black md:w-[150px] mx-auto font-medium">
-        <h1 className="text-center text-4xl px-3">Blog</h1>
+        <h1 className="text-center md:text-4xl text-xl px-3">Blog</h1>
       </div>
 
       <div className="mt-16 lg:mt-18 grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 ">

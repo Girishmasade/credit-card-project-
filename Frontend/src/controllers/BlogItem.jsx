@@ -5,7 +5,7 @@ const BlogItem = ({ id, img, title }) => {
   return (
     <div className="flex flex-wrap justify-center">
       <Link to={`/blog/${id}`} className="block max-w-sm">
-        <div className="flex w-[400px] flex-col p-4 gap-4 border rounded-md border-b-4 border-black items-center text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+        <div className="flex md:w-[400px] flex-col p-4 gap-4 border rounded-md border-b-4 border-black items-center text-center shadow-md hover:shadow-lg transition-shadow duration-300">
           <img
             src={img}
             alt={`Blog title ${title}`}
